@@ -33,13 +33,23 @@ def initial_round
   # code #initial_round here
   card_one = deal_card
   card_two = deal_card
-  sum = card_one + card_two
-  display_card_total(sum)
-  return sum
+  card_total = card_one + card_two
+  display_card_total(card_total)
+  return card_total
 end
 
-def hit?
+def hit?(card_total)
   # code hit? here
+  prompt_user
+  user_input = get_user_input
+  if user_input == 'h'
+    deal_card
+    card_total += deal_card
+  elsif user_input == 's'
+    card_total
+  else 
+    invalid_command
+  end
 end
 
 def invalid_command
