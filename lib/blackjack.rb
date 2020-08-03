@@ -34,7 +34,7 @@ def initial_round
   2.times do
     deal_card
   end
-
+  display_card_total
 end
 
 def hit?
