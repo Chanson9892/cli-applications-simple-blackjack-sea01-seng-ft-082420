@@ -49,6 +49,7 @@ def hit?(card_total)
     card_total
   else
     invalid_command
+    prompt_user
   end
 end
 
@@ -64,3 +65,4 @@ end
 def runner
   # code runner here
 end
+
