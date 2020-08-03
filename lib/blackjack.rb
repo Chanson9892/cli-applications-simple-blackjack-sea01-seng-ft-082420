@@ -5,7 +5,7 @@ end
 
 def deal_card
   # code #deal_card here
-  random_number = rand(10) + 1
+  random_number = rand(1..11)
   return random_number
 end
 
@@ -31,10 +31,9 @@ end
 
 def initial_round
   # code #initial_round here
-  2.times do
-    deal_card
-  end
+  sum = deal_card + deal_card
   display_card_total
+  sum = di
 end
 
 def hit?
