@@ -31,10 +31,10 @@ end
 
 def initial_round
   # code #initial_round here
-  2.times do 
+  2.times do
     deal_card
   end
-  
+
 end
 
 def hit?
