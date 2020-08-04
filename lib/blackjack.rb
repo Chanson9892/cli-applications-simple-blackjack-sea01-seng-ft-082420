@@ -40,9 +40,8 @@ end
 
 def hit?(card_total)
   # code hit? here
-  prompt_user
   while card_total < 21
-
+    prompt_user
     user_input = get_user_input
     if user_input == "h"
       deal_card
