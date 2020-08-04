@@ -47,6 +47,7 @@ def hit?(card_total)
   elsif user_input == "s"
     card_total
   else
+    # asks and receives new input if the user first gave invalid_command
     invalid_command
     prompt_user
     user_input = get_user_input
