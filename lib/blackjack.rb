@@ -51,6 +51,7 @@ def hit?(card_total)
     invalid_command
     prompt_user
   end
+  user_input
 end
 
 def invalid_command
